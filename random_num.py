@@ -8,6 +8,10 @@ if len(sys.argv) != 3:
 _num = int(sys.argv[1])
 _sum = int(sys.argv[2])
 
+if _num <= 0:
+    print('Lenght needs to be greater then 0.')
+    sys.exit(1)
+    
 mid = int(_sum / _num)
 
 if mid == 0:
